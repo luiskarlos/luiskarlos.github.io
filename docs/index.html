@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rentals in Costa Rica — Locales comerciales en alquiler</title>
+  <meta name="description" content="Locales comerciales en alquiler en Costa Rica. Espacios listos para tu negocio en zonas de alto tránsito.">
+  <meta name="theme-color" content="#0e5566">
+
+  <link rel="canonical" href="https://rentalincostarica.com/">
+  <link rel="alternate" hreflang="es" href="https://rentalincostarica.com/">
+  <link rel="alternate" hreflang="en" href="https://rentalincostarica.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://rentalincostarica.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Rentals in Costa Rica — Locales comerciales en alquiler">
+  <meta property="og:description" content="Locales comerciales en alquiler en Costa Rica. Espacios listos para tu negocio.">
+  <meta property="og:url" content="https://rentalincostarica.com/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Auto-redirect to /en/ on first visit if browser prefers non-Spanish -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('lang');
+        if (saved === 'en') { location.replace('en/' + (location.hash || '')); return; }
+        if (saved === 'es') return;
+        var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        if (nav && nav.indexOf('es') !== 0) {
+          location.replace('en/' + (location.hash || ''));
+        }
+      } catch (e) { /* localStorage may be unavailable */ }
+    })();
+  </script>
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="./" aria-label="Rentals in Costa Rica — Inicio">
+      <span class="brand__name">Rentals in Costa Rica</span>
+      <span class="brand__sub">Locales en alquiler</span>
+    </a>
+    <a class="lang-toggle" href="en/" aria-label="Switch to English">
+      <span class="lang-toggle__current">ES</span>
+      <span class="lang-toggle__sep">/</span>
+      <span class="lang-toggle__other">EN</span>
+    </a>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">Costa Rica · Local Rentals</p>
+      <h1>Locales comerciales<br>en alquiler</h1>
+      <p class="lead">
+        Espacios listos para tu negocio en zonas de alto tránsito de Costa Rica.
+        Atención directa con la propietaria, condiciones flexibles y entrega inmediata.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PROPIEDADES ============ -->
+  <section class="section" id="propiedades">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Propiedades</p>
+        <h2>Espacios disponibles</h2>
+      </div>
+
+      <div class="props">
+
+        <!-- Local 1A · Live Jacó -->
+        <a class="prop" href="/jaco-live-local/" aria-label="Ver Local 1A en Live Jacó">
+          <div class="prop__img">
+            <img src="/jaco-live-local/images/gallery/fachada-600.webp"
+                 alt="Fachada del Local 1A en Live Jacó"
+                 width="600" height="451"
+                 loading="lazy"
+                 onerror="this.onerror=null;this.src='/jaco-live-local/images/gallery/fachada-600.jpg';">
+          </div>
+          <div class="prop__body">
+            <p class="prop__loc">Jacó · Costa Rica</p>
+            <h3 class="prop__title">Local 1A — Live Jacó</h3>
+            <p class="prop__sub">Local comercial de ~96 m² con terraza privada de 39 m², sobre la calle principal de Jacó.</p>
+            <div class="prop__meta">
+              <span class="prop__tag">~96 m²</span>
+              <span class="prop__tag">Terraza 39 m²</span>
+              <span class="prop__tag">Esquinero</span>
+            </div>
+            <span class="prop__cta">Ver detalles</span>
+          </div>
+        </a>
+
+        <!-- Placeholder próxima propiedad -->
+        <div class="prop prop--soon" aria-label="Nueva propiedad próximamente">
+          <div class="prop__img">
+            <div class="prop__placeholder">Próximamente</div>
+          </div>
+          <div class="prop__body">
+            <p class="prop__loc">Costa Rica</p>
+            <h3 class="prop__title">Nueva propiedad</h3>
+            <p class="prop__sub">Estamos sumando más espacios al portafolio. Contactanos si querés que te avisemos cuando esté disponible.</p>
+            <div class="prop__meta">
+              <span class="prop__tag">Próximamente</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section section--dark contact" id="contacto">
+    <div class="container-narrow">
+      <p class="eyebrow">Contacto</p>
+      <h2>Coordiná una visita</h2>
+      <p class="lead">
+        Escribinos por WhatsApp y te respondemos directamente. Atención bilingüe (ES / EN).
+      </p>
+      <a class="btn btn--whatsapp"
+         href="https://wa.me/50689936163?text=Hola%2C%20me%20interesa%20conocer%20las%20propiedades%20disponibles."
+         target="_blank" rel="noopener">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.889-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.99c-.003 5.45-4.437 9.884-9.886 9.884zm8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.892a11.821 11.821 0 0 0-3.48-8.413z"/>
+        </svg>
+        WhatsApp · +506 8993-6163
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="y"></span> Rentals in Costa Rica · <a href="en/">English</a></p>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</footer>
+
+</body>
+</html>
