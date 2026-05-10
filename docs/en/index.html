@@ -71,13 +71,14 @@
       <div class="props">
 
         <!-- Unit 1A · Live Jacó -->
-        <a class="prop" href="/jaco-live-local/en/" aria-label="See Unit 1A at Live Jacó">
+        <a class="prop" href="/jaco-live-local/en/" data-local-href="../../docs/en/" aria-label="See Unit 1A at Live Jacó">
           <div class="prop__img">
-            <img src="/jaco-live-local/images/gallery/fachada-600.webp"
+            <div class="prop__placeholder" aria-hidden="true">Unit 1A · Jacó</div>
+            <img src="images/properties/jaco-live-local.webp"
                  alt="Storefront of Unit 1A at Live Jacó"
                  width="600" height="451"
                  loading="lazy"
-                 onerror="this.onerror=null;this.src='/jaco-live-local/images/gallery/fachada-600.jpg';">
+                 onerror="this.onerror=null;this.src='images/properties/jaco-live-local.jpg';">
           </div>
           <div class="prop__body">
             <p class="prop__loc">Jacó · Costa Rica</p>
@@ -138,6 +139,17 @@
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </footer>
+
+
+<!-- Local dev convenience: swap absolute /jaco-live-local/ links to relative paths when on localhost -->
+<script>
+(function () {
+  if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') return;
+  document.querySelectorAll('a[data-local-href]').forEach(function (a) {
+    a.setAttribute('href', a.getAttribute('data-local-href'));
+  });
+})();
+</script>
 
 </body>
 </html>
